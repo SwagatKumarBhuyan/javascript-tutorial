@@ -22,3 +22,29 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+
+// ************  MEMORY  **********//
+// 1.Stack (PRIMITIVE)
+// 2.Heap  (Non-primnitive)
+
+let myYoutubename = "swagat.com"
+let anothername = myYoutubename
+anothername = "gallery"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+  email : "swagat123@COM",
+  id : "12345",
+}
+
+let userTwo = userOne
+
+userTwo.email = "gudu123@.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
