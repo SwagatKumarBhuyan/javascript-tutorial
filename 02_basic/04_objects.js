@@ -46,15 +46,41 @@ const users = [
 ] 
 
 users[1].email
-console.log(wpUser);
+// console.log(wpUser);
 
 // ********** get the value and stored into a array ********
 
-console.log(Object.keys(wpUser));
-console.log(Object.values(wpUser));
+// console.log(Object.keys(wpUser));
+// console.log(Object.values(wpUser));
 
 // ************ entries methode specify a single key and his value into single array *******
-console.log(Object.entries(wpUser));
+// console.log(Object.entries(wpUser));
 
 // *********** To check object has the property *********
-console.log(wpUser.hasOwnProperty('isLoggedIn'));
+// console.log(wpUser.hasOwnProperty('isLoggedIn'));
+
+
+// ********* Object Destructure ********
+
+const course ={
+    coursename: "javascript",
+    coursefees: 22000,
+    couseInstructor: "swagat",
+}
+
+// course.couseInstructor
+
+const {couseInstructor} = course //objects destructed
+console.log(couseInstructor);
+
+const {coursefees: fees} = course // objects can destructed by this way also
+console.log(fees);
+
+// json format
+[
+{
+    "name": "swagat",
+    "coursename": "js",
+    "price": "free",
+}
+]
